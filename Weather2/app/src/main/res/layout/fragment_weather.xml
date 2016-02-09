@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vijaysingh.weather2.WeatherFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/city_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/update_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city_field"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="13sp"/>
+    <TextView
+        android:id="@+id/weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="70sp"
+        android:layout_below="@+id/update_field"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/current_temp_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weather_icon"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp"/>
+    <TextView
+        android:id="@+id/details_filed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/current_temp_field"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+         android:id="@+id/fiveDay"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/fiveDay"
+         android:layout_above="@+id/bangaloreButton"
+         android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/sixteenDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sixteenDay"
+        android:layout_above="@+id/mumbaiButton"
+        android:layout_toEndOf="@+id/bangaloreButton" />
+
+
+
+    <Button
+        android:id="@+id/mumbaiButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="@string/mumbai"
+        android:textSize="15sp"
+        android:background="@drawable/button_shape"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/jaipurButton" />
+    <Button
+        android:id="@+id/delhiButton"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:text="@string/delhi"
+        android:textSize="15sp"
+        android:background="@drawable/button_shape"
+        android:textColor="#FFFFFF"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/mumbaiButton" />
+    <Button
+        android:id="@+id/bangaloreButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bangalore"
+        android:textSize="15sp"
+        android:background="@drawable/button_shape"
+        android:textColor="#FFFFFF"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/chennaiButton" />
+    <Button
+        android:id="@+id/chennaiButton"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/chennai"
+        android:textSize="15sp"
+        android:background="@drawable/button_shape"
+        android:textColor="#FFFFFF"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/jaipurButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="@string/jaipur"
+        android:textSize="15sp"
+        android:background="@drawable/button_shape"
+        android:textColor="#FFFFFF"
+
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/bangaloreButton" />
+
+    <Button
+        android:id="@+id/searchCity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_search_24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+
+
+</RelativeLayout>
